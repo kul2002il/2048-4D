@@ -6,10 +6,10 @@
 
 int main(int argc, char *argv[])
 {
-	QApplication Applic(argc, argv);
+    QApplication Applic(argc, argv);
 
-	game2048_4D *MainWindow = new game2048_4D;
-	MainWindow->resize(700, 500);
-	MainWindow->show();
-	Applic.exec();
+    game2048_4D *MainWindow = new game2048_4D;
+    MainWindow->resize(700, 500);
+    MainWindow->show();
+    Applic.exec();
 }

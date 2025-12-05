@@ -13,20 +13,20 @@
 
 class game2048_4D : public QWidget
 {
-	Q_OBJECT
+    Q_OBJECT
 public:
-	explicit game2048_4D(QWidget *parent = nullptr);
+    explicit game2048_4D(QWidget *parent = nullptr);
 
-	int counter = 0;
-	QLabel *counterOut;
+    int counter = 0;
+    QLabel *counterOut;
 
-	int game[3][3][3][3];
-	boxNan *Op[3][3][3][3];
+    int game[3][3][3][3];
+    boxNan *Op[3][3][3][3];
 
-	void keyPressEvent(QKeyEvent* pe);
-	void update(bool add = 0);
-	int compose(int &A0, int &A1, int &A2);
-	void clear();
+    void keyPressEvent(QKeyEvent* pe);
+    void update(bool add = 0);
+    int compose(int &A0, int &A1, int &A2);
+    void clear();
 
 signals:
 
