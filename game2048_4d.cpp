@@ -97,11 +97,11 @@ void game2048_4D::update(bool add)
     }
     if(add)
     {
-        int setArrPos = qrand() % clean.size();
+        int setArrPos = rand() % clean.size();
         game[clean[setArrPos].c[0]]
             [clean[setArrPos].c[1]]
             [clean[setArrPos].c[2]]
-            [clean[setArrPos].c[3]] = qrand()%100 > 75 ? 1 : 2;
+            [clean[setArrPos].c[3]] = rand()%100 > 75 ? 1 : 2;
         update(0);
     }
 }

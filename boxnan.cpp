@@ -17,7 +17,7 @@ void boxNan::setNan(int inNan)
 
     if(inNan == 0)
     {
-        palette.setColor(QPalette::Background, Qt::gray);
+        palette.setColor(QPalette::Window, Qt::gray);
         this->setAutoFillBackground(true); //  !!!
         this->setPalette(palette);
         this->setText("  ");
@@ -27,7 +27,7 @@ void boxNan::setNan(int inNan)
         QColor fon;
         fon.setHsv((inNan*17+60)%256, 150, 255);
 
-        palette.setColor(QPalette::Background, fon);
+        palette.setColor(QPalette::Window, fon);
 
         this->setAutoFillBackground(true); //  !!!
         this->setPalette(palette);
